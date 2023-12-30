@@ -1873,7 +1873,7 @@ local function QWCDKQF_fake_script() -- CoreShotPL.MainScript
 	}
 	
 	local function giveWeapon(weaponName)
-		local weaponGiver = workspace.Remotes.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver[weaponName].ITEMPICKUP)
+		local weaponGiver = workspace.Remote.ItemHandler:InvokeServer(workspace.Prison_ITEMS.giver[weaponName].ITEMPICKUP)
 	
 		if weaponGiver then
 			weaponGiver:MoveTo(game.Players.LocalPlayer.Character.Torso.Position)
